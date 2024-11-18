@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts for Outfit and Young Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            White: 'hsl(0, 0%, 100%)',
+            Stone100: 'hsl(30, 54%, 90%)',
+            Stone150: 'hsl(30, 18%, 87%)',
+            Stone600: 'hsl(30, 10%, 34%)',
+            Stone900: 'hsl(24, 5%, 18%)',
+            Brown800: 'hsl(14, 45%, 36%)',
+            Rose800: 'hsl(332, 51%, 32%)',
+            Rose50: 'hsl(330, 100%, 98%)',
+          },
+          fontFamily: {
+            YoungSerif: ['"Young Serif"', 'serif'],
+            Outfit: ['"Outfit"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-Outfit">
+
+  <div class="h-[100%] flex py-5 items-center justify-center bg-Stone100">
+    <div class="rounded-md w-[600px] p-[25px] bg-White">
+      <img class="rounded-md max-w-full" src="./img/image-omelette.jpeg" alt="omelette">
+      <h1 class="font-YoungSerif text-3xl mt-4 text-Stone900">Simple Omelette Recipe</h1>
+      <p class="mt-4 text-sm text-Stone600">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div class="mt-4 bg-Rose50 px-5 rounded-md py-4">
+        <span class="text-Rose800 font-semibold text-[20px]">Preparation time</span>
+        <ul role="list" class="list-disc text-Stone600  pl-4 mt-2">
+          <li class="text-sm mt-2"><span class="font-bold ml-3 text-Stone600">Total:</span> Approximately 10 minutes</li>
+          <li class="text-sm mt-2"><span class="font-bold ml-3 text-Stone600">Preparation: </span> 5 minutes</li>
+          <li class="text-sm mt-2"><span class="font-bold ml-3 text-Stone600">Coocking: </span>  5 minutes</li>
+        </ul>
+      </div>
+      <div class="mt-4">
+        <h2 class="font-YoungSerif text-2xl text-Brown800">Ingredients</h2>
+        <ul class="text-sm text-Stone600 list-disc pl-4 mt-3 flex flex-col gap-2">
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste </li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil </li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+        <div class="mt-7 border"></div>
+      </div>
+
+      <div class="mt-4">
+        <h2 class="font-YoungSerif text-2xl text-Brown800">Instructions</h2>
+        <ol class="text-Stone600 text-sm flex flex-col gap-3 mt-3">
+          <li><span class="font-bold text-Stone600">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture. </li>
+          <li class=""><span class="font-bold text-Stone600">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li class=""><span class="font-bold text-Stone600">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs.</li>
+          <li class=""><span class="font-bold text-Stone600">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li class=""><span class="font-bold text-Stone600">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+          <li class=""><span class="font-bold text-Stone600">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+        <div class="mt-7 border"></div>
+      </div>
+      <div class="mt-4">
+        <h2 class="font-YoungSerif text-2xl text-Brown800">Nutrition</h2>
+        <p class="text-sm mt-2 text-Stone600">The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="flex flex-col gap-2 px-5 mt-2">
+          <div class="flex">
+            <p class="mr-[220px] ml-5">Calories</p>
+            <p class="font-bold text-Brown800">277kcal</p>
+          </div>
+          <div class="border"></div>
+          <div class="flex">
+            <p class="mr-[235px] ml-5">Carbs</p>
+            <p class="font-bold text-Brown800">0g</p>
+          </div>
+          <div class="border"></div>
+          <div class="flex">
+            <p class="mr-[253px] ml-5">Fat</p>
+            <p class="font-bold text-Brown800">20g</p>
+          </div>
+          <div class="border"></div>
+          <div class="flex">
+            <p class="mr-[225px] ml-5">Protein</p>
+            <p class="font-bold text-Brown800">22g</p>
+          </div>
+          <div class="border"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
